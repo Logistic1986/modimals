@@ -1,0 +1,32 @@
+.nav {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 180%;
+	text-transform: capitalize;
+	text-align: center;
+	color: var(--neutral-dray404040);
+	& a:hover{
+		text-decoration: underline;
+	}
+	@include tablet {
+			font-size: 16px;
+	}
+}
+
+
+.nav__list {
+	display: flex;
+	column-gap: 30px;
+
+	@include tablet {
+		column-gap: 15px;
+	}
+	
+	a{
+		color: var(--neutral-dray404040);
+	}
+	a.active{
+		color: #000;
+	}
+}
